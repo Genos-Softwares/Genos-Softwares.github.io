@@ -1,0 +1,31 @@
+<div class="surface-overlay py-0">
+    <div class="flex align-items-center justify-content-between relative lg:static m-auto set-width px-4">
+       <a href="/" class="py-4 md:py-2">
+         <img src="{{ .Site.Params.logoUrl }}" height="50" />
+       </a>
+        <a href="javascript:void(0);" onclick="toggleNavBar()" class="cursor-pointer block lg:hidden text-700 mt-1" >
+            <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M3 5H21" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 12H21" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 19H21" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </a>
+        <div id="navBar" class="align-items-center flex-grow-1 justify-content-between hide-on-phone lg:flex absolute lg:static w-full surface-overlay left-0 top-100 p-2 lg:px-0 z-5 shadow-2 lg:shadow-none">
+            <section></section>
+            <ul class="list-none p-0 m-0 flex lg:align-items-center text-900 select-none flex-column lg:flex-row cursor-pointer">
+                {{ range .Site.Menus.main }}
+                  <li>
+                        <a href="{{ .URL }}" class="btn m-2 font-bold">{{ .Name }}</a>
+                  </li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+function toggleNavBar() {
+  var navBar = document.getElementById("navBar");
+  if (navBar.style.display === "block") {
+    navBar.style.display = "none";
+  } else {
+    navBar.style.display = "block";
+  }
+}
+</script>

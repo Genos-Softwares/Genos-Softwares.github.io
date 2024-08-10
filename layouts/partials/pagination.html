@@ -1,0 +1,57 @@
+{{ if gt .Paginator.TotalPages 1 }}
+<nav class="paginator flex justify-content-center align-items-center my-4">
+    <ul class="flex align-items-center list-none p-0 m-0">
+        {{ if .Paginator.HasPrev }}
+        <li class="mr-2">
+            <a href="{{ .Paginator.Prev.URL }}" class="btn  surface-100">
+                <i class="iconoir-arrow-left mr-2"></i>Previous
+            </a>
+        </li>
+        {{ else }}
+        <li class="mr-2">
+            <span class="btn  surface-100 text-400">
+                <i class="iconoir-arrow-left mr-2"></i>Previous
+            </span>
+        </li>
+        {{ end }}
+
+        {{ $ellipsisAdded := false }}
+        {{ range .Paginator.Pagers }}
+            {{ $pageNum := .PageNumber }}
+            {{ $currentPage := $.Paginator.PageNumber }}
+            
+            {{ if or (le $pageNum 2) (ge $pageNum (sub $.Paginator.TotalPages 1)) (and (ge $pageNum (sub $currentPage 2)) (le $pageNum (add $currentPage 2))) }}
+                <li class="mx-1 hidden md:block">
+                    <a href="{{ .URL }}" class="btn {{ if eq . $.Paginator.PageNumber }}text-primary font-semibold{{ else }}p-button-outlined surface-100{{ end }} w-3rem">
+                        {{ .PageNumber }}
+                    </a>
+                </li>
+            {{ else if not $ellipsisAdded }}
+                <li class="mx-1 hidden md:block">
+                    <span class="btn  surface-100 text-400 w-3rem">...</span>
+                </li>
+                {{ $ellipsisAdded = true }}
+            {{ end }}
+        {{ end }}
+                
+        
+        
+        {{ if .Paginator.HasNext }}
+        <li class="ml-2">
+            <a href="{{ .Paginator.Next.URL }}" class="btn  surface-100">
+                Next<i class="iconoir-arrow-right ml-2"></i>
+            </a>
+        </li>
+        {{ else }}
+        <li class="ml-2">
+            <span class="btn  surface-100 text-400">
+                Next<i class="iconoir-arrow-right ml-2"></i>
+            </span>
+        </li>
+        {{ end }}
+    </ul>
+</nav>
+<center class="p-2 mb-4">
+  {{ .Paginator.PageNumber }}  of {{ .Paginator.TotalPages }} Pages
+</center>
+{{ end }}

@@ -1,0 +1,60 @@
+<div class="bg-bluegray-50 py-4">
+    <center class=" hover:text-100 p-6">
+        <img src="{{ .Site.Params.logoBannerUrl }}" class="w-18rem" />
+    </center>
+    <div class="m-auto set-width grid">
+        <div class="col-12 md:col-7 grid px-4 text-center md:text-left ">
+            <div class="col-6 md:col-3">
+                <div class="font-bold text-base line-height-3 mb-3">Company</div>
+                {{ range .Site.Menus.footer_nav }}
+                    <a href="{{ .URL }}" class="line-height-3 block text-800 text-sm mb-2 no-underline">{{ .Name }}</a>
+                {{ end }}
+            </div>
+            <div class="col-6 md:col-3">
+                <div class="font-bold text-base line-height-3 mb-3">Comunity</div>
+                {{ range .Site.Menus.footer_connect }}
+                    <a href="{{ .URL }}" class="line-height-3 block text-800 text-sm mb-2 no-underline">{{ .Name }}</a>
+                {{ end }}
+            </div>
+            <div class="col-6 md:col-3">
+                <div class="font-bold text-base line-height-3 mb-3">Resources</div>
+                {{ range .Site.Menus.footer_resource }}
+                    <a href="{{ .URL }}" class="line-height-3 block text-800 text-sm mb-2 no-underline">{{ .Name }}</a>
+                {{ end }}
+            </div>
+            <div class="col-6 md:col-3">
+                <div class="font-bold text-base line-height-3 mb-3">Legal</div>
+                {{ range .Site.Menus.footer_link }}
+                    <a href="{{ .URL }}" class="line-height-3 block text-800 text-sm mb-2 no-underline">{{ .Name }}</a>
+                {{ end }}
+            </div>
+        </div>
+        <div class="col-12 md:col-5 px-4">
+            <div class="border-top-1 border-500 pt-3">
+                <div class="text-sm my-4 flex flex-wrap">
+                    BhojanApp helps shop owners manage their business smoothly. 
+                    It makes billing, reporting, sales tracking, and GST filing easy. 
+                    Whether you have a small eatery or a busy restaurant, 
+                    BhojanApp keeps everything organized and efficient. 
+                </div>
+                <div class="flex align-items-center justify-content-start">
+                    <a href="https://www.instagram.com/tech_entrepreneurship/" class="cursor-pointer  mr-3">
+                        <svg  width="20px" height="20px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#BDBDBD"><path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#BDBDBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z" stroke="#BDBDBD" stroke-width="1.5"></path><path d="M17.5 6.51L17.51 6.49889" stroke="#BDBDBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </a>
+                    <a href="https://x.com/bhojanApp" class="cursor-pointer  mr-3">
+                        <svg width="20px" height="20px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#BDBDBD"><path d="M23 3.01006C23 3.01006 20.9821 4.20217 19.86 4.54006C19.2577 3.84757 18.4573 3.35675 17.567 3.13398C16.6767 2.91122 15.7395 2.96725 14.8821 3.29451C14.0247 3.62177 13.2884 4.20446 12.773 4.96377C12.2575 5.72309 11.9877 6.62239 12 7.54006V8.54006C10.2426 8.58562 8.50127 8.19587 6.93101 7.4055C5.36074 6.61513 4.01032 5.44869 3 4.01006C3 4.01006 -1 13.0101 8 17.0101C5.94053 18.408 3.48716 19.109 1 19.0101C10 24.0101 21 19.0101 21 7.51006C20.9991 7.23151 20.9723 6.95365 20.92 6.68006C21.9406 5.67355 23 3.01006 23 3.01006Z" stroke="#BDBDBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCFgYNxfPzTJibXOkm5oudUg" class="cursor-pointer  mr-3">
+                        <svg width="20px" height="20px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#BDBDBD"><path d="M14 12L10.5 14V10L14 12Z" fill="#BDBDBD" stroke="#BDBDBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2 12.7075V11.2924C2 8.39705 2 6.94939 2.90549 6.01792C3.81099 5.08645 5.23656 5.04613 8.08769 4.96549C9.43873 4.92728 10.8188 4.8999 12 4.8999C13.1812 4.8999 14.5613 4.92728 15.9123 4.96549C18.7634 5.04613 20.189 5.08645 21.0945 6.01792C22 6.94939 22 8.39705 22 11.2924V12.7075C22 15.6028 22 17.0505 21.0945 17.9819C20.189 18.9134 18.7635 18.9537 15.9124 19.0344C14.5613 19.0726 13.1812 19.1 12 19.1C10.8188 19.1 9.43867 19.0726 8.0876 19.0344C5.23651 18.9537 3.81097 18.9134 2.90548 17.9819C2 17.0505 2 15.6028 2 12.7075Z" stroke="#BDBDBD" stroke-width="1.5"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-bluegray-800 text-100 py-6">
+    <center>
+        Website made with  ❤️ In India
+    </center>
+</div>

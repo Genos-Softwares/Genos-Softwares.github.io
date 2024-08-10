@@ -1,1 +1,0 @@
-# Genos-Softwares.github.io

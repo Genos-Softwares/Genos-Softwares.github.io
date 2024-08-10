@@ -1,0 +1,14 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{{ $main_style := resources.Get "css/main.css" | resources.Minify }}
+<link rel="stylesheet" href="{{ $main_style.Permalink }}">
+
+{{ $iconoir_style := resources.Get "css/iconoir.css" | resources.Minify }}
+<link rel="stylesheet" href="{{ $iconoir_style.Permalink }}">
+
+{{ $primeflex_style := resources.Get "css/primeflex.css" | resources.Minify }}
+<link rel="stylesheet" href="{{ $primeflex_style.Permalink }}">
+
+{{ $primeflex_light_style := resources.Get "css/primeone-light.css" | resources.Minify }}
+<link rel="stylesheet" href="{{ $primeflex_light_style.Permalink }}">

@@ -1,0 +1,215 @@
+{{ define "main" }}
+    <section class="py-6 text-center">
+        <div class="funk-font line-height-1">
+            <h1 class="text-6xl md:text-8xl m-0">Quick 3-Click Restaurant <span class="line-break yellow_highlight_bold_05">POS Software</span></h1>
+            <h2 class="text-4xl md:text-7xl my-0 my-3 relative">Simple, efficient, yet
+                <span class="blue_highlight_01 relative">affordable!
+                    <em class="text-green text-3xl absolute top-100 end-0 rotate-350 hide-on-phone">
+                    <img src="/img/graphics/FyWn9pdip2EO.svg" class="d-block mb-3 line-break" alt="">
+
+                    <span>
+                        
+                        <span class="oe_currency_value">{{ .Site.Params.price }}</span>&nbsp;Rs</span> / month <br>for everything
+                    </em>
+                </span>
+            </h2>
+            <div class="my-6">
+                <a href="{{ .Site.Params.setupDownloadLink }}" class="btn btn-green m-2 font-bold">Download now<span class="hide-small"> - It's free</span></a>
+                <a target="_blank" href="{{ .Site.Params.calendlyLink }}" class="btn text-green btn-light m-2 font-bold"> Schedule a demo </a>
+                <br>
+                <img src="/img/arrows/D4kndZSppnbg.svg" class="mt-3 mb-2" loading="lazy">
+                <br>
+                <div class="line-height-2 text-800 text-3xl">No credit card required <br> Instant access</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="surface-100 py-8 curve-top">
+        <div class="set-width m-auto px-4">
+            <div class="p-2 text-center">
+                <h6 class="funk-font line-height-1 text-5xl md:text-8xl m-0 mb-2 relative">
+                    Trusted by 20+ 
+                    <span class="absolute top-minus-2 left-auto bottom-auto right-auto text-6xl text-orange-color-7 vertical-align-top hide-on-phone">
+                        <img src="/img/graphics/PvLSL4vJkTse.svg" height="40px" class="" alt="">happy
+                    </span>
+                    Customers
+                </h6>
+                <span class="text-base md:text-2xl text-800">who grow their business with BhojanApp</span>
+            </div>
+            <div class="text-center my-4">
+                <div class="grid m-auto set-width">
+                    {{ range .Site.Params.customerLogos.items }}
+                        <figure class="col-6 md:col-3 m-0 text-center p-3 md:px-8">
+                            <img class="customer-img hover:shadow-1 cursor-pointer border-1 border-300" src="{{ .image }}" alt="{{ .name }} icon" >
+                            <figcaption class="my-1 font-semibold">{{ .name }}</figcaption>
+                        </figure>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="surface-100 py-8">
+        <div class="px-4">
+            <div class="set-width m-auto">
+                <h2 class="funk-font line-height-1 text-5xl md:text-8xl text-center my-5">
+                    <span class="yellow_highlight_bold_05">
+                        Built for
+                    </span> 
+                        all
+                    <span class="yellow_highlight_03"> 
+                        food business 
+                    </span>
+                </h2>
+                <div class="grid justify-content-center">
+                    <div class="col-12 md:col-5 text-center">
+                        <p class="text-2xl font-light"><strong>Experience true speed,</strong> reduced data entry, and a fast UI. All operations are done in less than 90ms - faster than a blink.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- <section class="surface-100 pt-6" style="margin-top: 140px;">
+        <div class="set-width m-auto">
+            <div class=" relative ml-auto mb-n4">
+                <img class="persona_bg z-5" alt="" src="/img/highlights/eFMqc9kzxqfF.svg" loading="lazy">
+                <div class="z-1 position-relative bg-white rounded rounded-pill-md shadow p-3 px-md-5">
+                    <i>If you simplify everything, you can do anything!</i><br>
+                    <small class="text-muted">- Bill McDermott, former CEO of SAP</small>
+                </div>
+                <img src="/img/components/EqgL2cfDkzV1.png" class="s_wd_persona_icon" alt="" loading="lazy">
+            </div>
+        </div>
+    </section>  -->
+
+    <section class="surface-100 curve-left-bottom_right">
+        <div class="set-width m-auto px-4 md:p-8">
+            <h2 class="funk-font line-height-1 text-5xl md:text-7xl m-0">
+                Restaurant POS 
+                <span class="display_circle">software</span>
+                <br>
+                made 
+                <span class="display_underline">simple</span>
+                <span class="text-o-color-8">.</span>
+            </h2>
+            <div class="grid mt-6">
+                <div class="col-12 md:col-7">
+                    <div class="card overflow-hidden">
+                        <h4 class="text-2xl font-normal m-0">Inventory Management</h4>
+                        <p class="mb-4 text-xl font-light">
+                            - Real-time inventory tracking and alerts.
+                            <br> - Automated stock deduction with each sale.
+                            <br> - Generate detailed inventory reports.
+                        </p>
+                        <img src="/img/components/9.png" class="customer-img" alt="Unique value" loading="lazy">
+                    </div>
+                    <div class="card overflow-hidden">
+                        <h4 class="text-2xl font-normal m-0">Quick Billing Software</h4>
+                        <p class="mb-4 text-xl font-light">
+                            - Streamlined order taking and bill generation.
+                            <br> - Easy table management and bill splitting.
+                            <br> - Integrated payment processing.
+                        </p>
+                        <img src="/img/components/21.png" class="customer-img" alt="Unique value" loading="lazy">
+                    </div>
+                    <div class="card">
+                        <h4 class="text-2xl font-normal m-0">No corporate bullsh*t</h4>
+                        <p class=" text-xl font-light text-800 mb-0">"With most systems, you get 70% of what you hoped. With BhojanApp, you get more than what you expected. You, guys, will transform the market." <small>- Anonymous competitor</small></p>
+                    </div>
+                </div>
+                <div class="col-12 md:col-5">
+                    <div class="card overflow-hidden">
+                        <h4 class="text-2xl font-normal m-0">In-depth Analytics</h4>
+                        <p class="mb-4 text-xl font-light">
+                            - Detailed sales and revenue reports.
+                            <br> - Menu performance analysis.
+                            <br> - Customer behavior insights.
+                        </p>
+                        <img src="/img/components/23.png" class="customer-img" alt="Unique value" loading="lazy">
+                    </div>
+                    <div class="card overflow-hidden">
+                        <h4 class="text-2xl font-normal m-0">Online Ordering Integration</h4>
+                        <p class="mb-4 text-xl font-light">
+                            - Seamless integration with food delivery platforms.
+                            <br> - Custom online menu management.
+                            <br> - Real-time order tracking and updates.
+                        </p>
+                        <img src="/img/components/26.png" class="customer-img" alt="Unique value" loading="lazy">
+                    </div>
+                    <div class="card">
+                        <h4 class="text-2xl font-normal m-0">Fair pricing</h4>
+                        <p class="mb-4 text-xl font-light">No usage-based pricing, no feature upselling, no long term contracts, no hosting limits, no surprises... just a single price per user - all inclusive.</p>
+                        <a href="{{ .Site.Params.calendlyLink }}" class="btn btn-green">schedule a free demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hide-on-phone">
+        <div class="set-width m-auto">
+            <img src="/img/graphics/iFqa6k1tx3HZ.svg" width="120px" class="origin-top-right rotate-340 mb-4 mt-m3" alt="" loading="lazy">
+        </div>
+    </section>
+
+    <section class="my-5 md:m-0">
+        <div class="set-width m-auto pb-4 md:px-8 md:pt-0 ">
+            <div class="">
+                <div class="md:px-8 p-2 text-center">
+                    <h6 class="funk-font line-height-1 text-5xl md:text-8xl m-0 relative">
+                        What our 
+                        <span class="absolute top-minus-2 left-auto bottom-auto right-auto text-6xl text-orange-color-7 vertical-align-top hide-on-phone">
+                            <img src="/img/graphics/PvLSL4vJkTse.svg" height="40px" class="" alt="">happy
+                        </span>
+                        customer want to say
+                    </h6>
+                    <span class="text-base md:text-2xl text-800">who grow their business with BhojanApp</span>
+                </div>
+            </div>
+            <div class="flex flex-row-reverse flex-wrap">
+                <img src="/img/arrows/I2z6TIss764n.svg" width="150px" class="mr-8 hide-on-phone" alt="" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="set-width m-auto">
+        <div class="px-4 md:p-8 md:pt-0">
+            <img src="/img/components/KY9jZCoQmOHr.svg" height="50px" class="mb-m1-5 ml-6" alt="" loading="lazy">
+            <div class="grid surface-100 border-round-2xl p-4">
+                <div class="col-12 md:col-8">
+                    <blockquote class="blockquote border-0 p-0 m-0 fst-normal">
+                        <p class="font-bold line-height-3 text-2xl mb-0">BhojanApp has revolutionized our restaurant operations. It’s streamlined our ordering process, boosted our efficiency, and significantly improved our customer satisfaction. It’s not just an app, it’s a game-changer for our business!</p>
+                    </blockquote>
+                </div>
+                <div class="col-12 md:col-4 flex flex-column md:align-items-end pr-2">
+                    <img height="80px" class="mt-m4-5 rounded-circle hide-on-phone" src="/img/components/neeraj_sharma.png" alt="Harry Van Donink picture" loading="lazy">
+                    <div class="my-4 text-lg-end">
+                        <b>Neeraj Sharma</b><br>
+                        <small>OWNER, Hot N’ Fast</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center mpt-200">
+        <div class="set-width m-auto p-4 md:p-8">
+            <h3 class="funk-font line-height-1 text-5xl md:text-8xl my-6">
+                <span class="display_fireworks_01 relative">
+                    Unleash
+                </span>
+                <br>  your 
+                <span class="text-blue-color-2">
+                    growth potential
+                </span>
+            </h3>
+
+            <a class="btn btn-green" href="{{ .Site.Params.setupDownloadLink }}">Download now - It's free</a>
+            <br>
+            <img src="/img/arrows/D4kndZSppnbg.svg" class="mt-3 mb-2" alt="" loading="lazy">
+            <br>
+            <small class="line-height-2 text-800">No credit card required <br> Instant access</small>
+        </div>
+    </section>
+{{ end }}

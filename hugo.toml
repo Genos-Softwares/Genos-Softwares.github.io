@@ -1,0 +1,114 @@
+baseURL = 'https://bhojanapp.com/'
+languageCode = 'en-us'
+title = 'Bhojan App'
+enableRobotsTXT = true
+
+[params]
+  price = '499.00'
+  setupDownloadLink = 'https://bhojanapp.com/bhojan_app.exe'
+  calendlyLink = 'https://calendly.com/bhojanapp-help/30min'
+  logoUrl = '/img/logos/bhojanAppCharlogo.png'
+  logoBannerUrl = '/img/logos/bhojanAppBanner.png'
+  
+
+[params.customerLogos]
+  [[params.customerLogos.items]]
+    name = "Brewed Bliss Cafe"
+    image = "/img/logos/1.png"
+  [[params.customerLogos.items]]
+    name = "Raja's Feast"
+    image = "/img/logos/2.png"
+  [[params.customerLogos.items]]
+    name = "Mandarin Mystique"
+    image = "/img/logos/3.png"
+  [[params.customerLogos.items]]
+    name = "Punjabi Platter"
+    image = "/img/logos/4.png"
+  [[params.customerLogos.items]]
+    name = "Chutney Enigma"
+    image = "/img/logos/5.png"
+  [[params.customerLogos.items]]
+    name = "Tacoste"
+    image = "/img/logos/6.png"
+  [[params.customerLogos.items]]
+    name = "Larana"
+    image = "/img/logos/7.png"
+  [[params.customerLogos.items]]
+    name = "Bombay Bistro"
+    image = "/img/logos/8.png"
+
+  
+
+[pagination]
+  pagerSize = 5
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  
+  [[menu.main]]
+    name = "Blogs"
+    url = "/blog/"
+    weight = 2
+
+  [[menu.main]]
+    name = "About Us"
+    url = "/about/"
+    weight = 3
+
+  [[menu.footer_resource]]
+    name = "Download"
+    url = "/bhojan_app.exe"
+    weight = 1
+
+  [[menu.footer_resource]]
+    name = "Get Started"
+    url = "https://calendly.com/bhojanapp-help/30min"
+    weight = 2
+
+
+  [[menu.footer_link]]
+    name = "Privacy"
+    url = "/privacy/"
+    weight = 1
+
+  [[menu.footer_link]]
+    name = "Terms"
+    url = "/terms/"
+    weight = 2
+
+  
+  [[menu.footer_nav]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 1
+
+  [[menu.footer_nav]]
+    name = "About us"
+    url = "/about/"
+    weight = 2
+
+  [[menu.footer_nav]]
+    name = "Teams"
+    url = "/team/"
+    weight = 3
+
+
+  [[menu.footer_connect]]
+    name = "Instagram"
+    url = "https://www.instagram.com/tech_entrepreneurship/"
+    weight = 1
+
+  [[menu.footer_connect]]
+    name = "Twitter"
+    url = "https://x.com/bhojanApp"
+    weight = 2
+
+  [[menu.footer_connect]]
+    name = "Youtube"
+    url = "https://www.youtube.com/channel/UCFgYNxfPzTJibXOkm5oudUg"
+    weight = 3
+  
