@@ -2,13 +2,21 @@
 {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
 {{ $dateHuman := .Date | time.Format ":date_long" }}
 
-<div class="set-width m-auto px-4 my-8">
-    <h1 id="title">{{ .Title }}</h1>
-    <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-    <section class="py-6">
+<div class="w-12 md:w-10 lg:w-8 xl:w-6 m-auto px-4 my-8 line-height-3 text-bluegray-700 line-height-3">
+    <div class="font-bold text-4xl my-2 text-900">{{ .Title }}</div>
+    <div class="flex text-sm text-700 gap-2 align-items-center">
+        <div>By Author: <b>Yashwant</b> On</div>
+        <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+    </div>
+    <section class="my-4 flex flex-column text-800 gap-2 align-items-start">
         {{ .Content }}
     </section>
-</div>
 
+    
+
+    <a href="/blog/" class="btn  surface-100">
+        <i class="iconoir-arrow-left mr-2"></i>Back
+    </a>
+</div>
 
 {{ end }}

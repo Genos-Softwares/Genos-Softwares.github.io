@@ -22,13 +22,13 @@
             
             {{ if or (le $pageNum 2) (ge $pageNum (sub $.Paginator.TotalPages 1)) (and (ge $pageNum (sub $currentPage 2)) (le $pageNum (add $currentPage 2))) }}
                 <li class="mx-1 hidden md:block">
-                    <a href="{{ .URL }}" class="btn {{ if eq . $.Paginator.PageNumber }}text-primary font-semibold{{ else }}p-button-outlined surface-100{{ end }} w-3rem">
+                    <a href="{{ .URL }}" class="btn border-1 border-200 surface-100 w-2rem">
                         {{ .PageNumber }}
                     </a>
                 </li>
             {{ else if not $ellipsisAdded }}
                 <li class="mx-1 hidden md:block">
-                    <span class="btn  surface-100 text-400 w-3rem">...</span>
+                    <span class="btn  surface-100 text-400 w-2rem">...</span>
                 </li>
                 {{ $ellipsisAdded = true }}
             {{ end }}

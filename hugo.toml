@@ -2,6 +2,8 @@ baseURL = 'https://bhojanapp.com/'
 languageCode = 'en-us'
 title = 'Bhojan App'
 enableRobotsTXT = true
+summaryLength=10
+
 
 [params]
   price = '499.00'
@@ -40,7 +42,10 @@ enableRobotsTXT = true
   
 
 [pagination]
+  disableAliases = false
   pagerSize = 5
+  path = 'page'
+
 
 [menu]
   [[menu.main]]

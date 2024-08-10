@@ -19,7 +19,7 @@
       }
     </style>
 </head>
-<body class="p-0 m-0 surface-section align-items-center">
+<body class="p-0 m-0 surface-section align-items-center text-900">
     {{ partial "banner.html" . }}
     <header class="">
       {{ partial "header.html" . }}
@@ -31,5 +31,14 @@
       {{ partial "footer.html" . }}
     </footer>
     
-  </body>
+</body>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C1NHXE74GB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C1NHXE74GB');
+</script>
 </html>
