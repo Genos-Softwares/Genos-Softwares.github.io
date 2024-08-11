@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <div class="set-width m-auto px-4 my-8">
+  <div class="m-auto px-4 my-8">
     <div class="font-semibold text-3xl line-height-3">{{ .Title }}</div>
     <div class="flex flex-column my-4">
       {{ range .Paginator.Pages }}
@@ -7,9 +7,6 @@
       {{ end }}
     </div>
   </div>
-  {{ partial "pagination.html" .}}  
-
-  
-
+  {{ partial "pagination.html" .}}
 {{ end }}
 

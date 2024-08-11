@@ -4,6 +4,7 @@ title = 'Bhojan App'
 enableRobotsTXT = true
 summaryLength=10
 enableGitInfo = true
+disableKinds = ['taxonomy', 'term']
 
 [params]
   price = '499.00'
@@ -11,7 +12,9 @@ enableGitInfo = true
   calendlyLink = 'https://calendly.com/bhojanapp-help/30min'
   logoUrl = '/img/logos/bhojanAppCharlogo.png'
   logoBannerUrl = '/img/logos/bhojanAppBanner.png'
-  
+
+[permalinks]
+  blog = "/blog/:year/:month/:title/"
 
 [params.customerLogos]
   [[params.customerLogos.items]]
@@ -84,6 +87,13 @@ enableGitInfo = true
     name = "Terms"
     url = "/terms/"
     weight = 2
+
+  [[menu.footer_link]]
+    name = "Sitemap"
+    url = "/sitemap.xml"
+    weight = 3
+
+    
 
   
   [[menu.footer_nav]]
