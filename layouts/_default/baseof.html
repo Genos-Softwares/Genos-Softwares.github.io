@@ -2,16 +2,6 @@
 <html lang="en">
 <head>
     {{ partial "head.html" . }}
-    <title>
-        {{ if .IsHome }}
-        
-        {{ else }}
-            {{ if .Title }}
-                {{ .Title }} | 
-            {{ end }}
-        {{ end }}
-        {{ site.Title }}
-    </title>
     <style>
       body {
         font-size: 16px;

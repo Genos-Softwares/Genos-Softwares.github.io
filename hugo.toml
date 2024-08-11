@@ -7,11 +7,13 @@ enableGitInfo = true
 disableKinds = ['taxonomy', 'term']
 
 [params]
+  name = 'BhojanApp'
   price = '499.00'
   setupDownloadLink = 'https://bhojanapp.com/bhojan_app.exe'
   calendlyLink = 'https://calendly.com/bhojanapp-help/30min'
   logoUrl = '/img/logos/bhojanAppCharlogo.png'
   logoBannerUrl = '/img/logos/bhojanAppBanner.png'
+  description = 'BhojanApp is an all-in-one restaurant management POS software. Manage orders, inventory, and customer relations with ease. Get started with BhojanApp today!'
 
 [permalinks]
   blog = "/blog/:year/:month/:title/"
