@@ -270,6 +270,14 @@ main{
   white-space: nowrap;
 }
 
+.yellow_highlight_bold_04 {
+  background-image: url("../img/highlights/yellow_highlight_bold_04.svg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  white-space: nowrap;
+}
+
 .yellow_highlight_03 {
   background-image: url("../img/highlights/yellow_highlight_03.svg");
   background-position: center bottom;

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     {{ partial "head.html" . }}
     <title>
         {{ if .IsHome }}
@@ -19,7 +18,7 @@
       }
     </style>
 </head>
-<body class="p-0 m-0 surface-section align-items-center text-900">
+<body class="p-0 m-0">
     {{ partial "banner.html" . }}
     <header>
       {{ partial "header.html" . }}
@@ -27,7 +26,7 @@
     <div class="w-full">
       {{ block "content" . }}{{ end }}
     </div>
-    <main class="mx-auto w-12 md:w-10 lg:w-8 xl:w-6">
+    <main class="">
       {{ block "main" . }}{{ end }}
     </main>
     <footer>
@@ -42,6 +41,5 @@
   
     gtag('config', 'G-C1NHXE74GB');
   </script>
-    
 </body>
 </html>
