@@ -6,10 +6,6 @@ html{
     font-family: "Inter";
 }
 
-main{
-    min-height: 50vh;
-}
-
 .font-thin {
     font-weight: 100;
     font-style: normal;

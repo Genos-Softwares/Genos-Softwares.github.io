@@ -4,13 +4,13 @@
         {{ if .Paginator.HasPrev }}
         <li class="mr-2">
             <a href="{{ .Paginator.Prev.URL }}" class="btn  surface-100">
-                <i class="iconoir-arrow-left mr-2"></i>Previous
+                <i class="iconoir-nav-arrow-left mr-2"></i>Previous
             </a>
         </li>
         {{ else }}
         <li class="mr-2">
             <span class="btn  surface-100 text-400">
-                <i class="iconoir-arrow-left mr-2"></i>Previous
+                <i class="iconoir-nav-arrow-left mr-2"></i>Previous
             </span>
         </li>
         {{ end }}
@@ -39,13 +39,13 @@
         {{ if .Paginator.HasNext }}
         <li class="ml-2">
             <a href="{{ .Paginator.Next.URL }}" class="btn  surface-100">
-                Next<i class="iconoir-arrow-right ml-2"></i>
+                Next<i class="iconoir-nav-arrow-right ml-2"></i>
             </a>
         </li>
         {{ else }}
         <li class="ml-2">
             <span class="btn  surface-100 text-400">
-                Next<i class="iconoir-arrow-right ml-2"></i>
+                Next<i class="iconoir-nav-arrow-right ml-2"></i>
             </span>
         </li>
         {{ end }}

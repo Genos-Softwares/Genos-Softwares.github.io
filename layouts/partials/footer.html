@@ -36,6 +36,10 @@
                     It makes billing, reporting, sales tracking, and GST filing easy. 
                     Whether you have a small eatery or a busy restaurant, 
                     BhojanApp keeps everything organized and efficient. 
+                    {{ with .GitInfo }}
+                       Last Updated At : {{ .CommitDate.Format "2006-01-02" }}
+                    {{ end }}
+
                 </div>
                 <div class="flex align-items-center justify-content-start">
                     <a href="https://www.instagram.com/tech_entrepreneurship/" class="cursor-pointer  mr-3">

@@ -23,12 +23,12 @@
     <header>
       {{ partial "header.html" . }}
     </header>
-    <div class="w-full">
+    <main class="w-full">
       {{ block "content" . }}{{ end }}
-    </div>
-    <main class="">
-      {{ block "main" . }}{{ end }}
     </main>
+    <div class="mx-auto w-12 md:w-10 lg:w-8 xl:w-6">
+      {{ block "main" . }}{{ end }}
+    </div>
     <footer>
       {{ partial "footer.html" . }}
     </footer>
