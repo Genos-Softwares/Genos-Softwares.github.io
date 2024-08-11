@@ -21,24 +21,27 @@
 </head>
 <body class="p-0 m-0 surface-section align-items-center text-900">
     {{ partial "banner.html" . }}
-    <header class="">
+    <header>
       {{ partial "header.html" . }}
     </header>
-    <main class="">
+    <div class="w-full">
+      {{ block "content" . }}{{ end }}
+    </div>
+    <main class="mx-auto w-12 md:w-10 lg:w-8 xl:w-6">
       {{ block "main" . }}{{ end }}
     </main>
-    <footer class="w-100">
+    <footer>
       {{ partial "footer.html" . }}
     </footer>
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C1NHXE74GB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-C1NHXE74GB');
+  </script>
     
 </body>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C1NHXE74GB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-C1NHXE74GB');
-</script>
 </html>

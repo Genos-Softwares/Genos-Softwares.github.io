@@ -3,6 +3,7 @@
       <h2 class="text-2xl font-bold mb-2">
           <a href="{{ .RelPermalink }}" class="text-900 no-underline hover:text-primary transition-colors transition-duration-150">{{ .Title }}</a>
       </h2>
+
       <div class="flex align-items-center text-500 text-sm">
           <i class="pi pi-calendar mr-2"></i>
           <span>{{ .Date.Format "Jan 2, 2006" }}</span>
@@ -13,6 +14,21 @@
               <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="mr-2 hover:text-primary transition-colors transition-duration-150">{{ . }}</a>
           {{ end }}
       </div>
+      {{ $firstImage := "" }}
+      {{ $content := .Content }}
+      {{ if findRE "<img src=\"[^\"]+\"" $content 1 }}
+        {{ $firstImage = index (findRE "<img src=\"[^\"]+\"" $content 1) 0 }}
+        {{ $firstImage = index (findRE "src=\"[^\"]+\"" $firstImage 1) 0 }}
+        {{ $firstImage = strings.TrimPrefix "src=\"" $firstImage }}
+        {{ $firstImage = strings.TrimSuffix "\"" $firstImage }}
+      {{ end }}
+
+      {{ with $firstImage }}
+        <center class="my-4 w-full">
+          <img src="{{ . }}" alt="Preview" class="border-round shadow-1 w-18rem md:w-24rem lg:w-30rem" /> 
+        </center> 
+      {{ end }}
+
   </header>
   <p>{{ .Summary }}</p>
   <footer>
