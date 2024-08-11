@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Inter:300,400,500,600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Caveat:700&display=swap");
 
 
 html{
-    font-family: "Poppins";
+    font-family: "Inter";
 }
 
 main{
@@ -11,7 +11,7 @@ main{
 }
 
 .font-thin {
-    font-weight: 80;
+    font-weight: 100;
     font-style: normal;
 }
 
@@ -117,13 +117,31 @@ main{
 .btn-light:hover{
     background-color: #E6E9ED;
 }
+.btn-light:active {
+  border: 1px solid #E6E9ED;
+  outline: 0;
+}
+.btn-light:focus:not(:active) {
+  border: 1px solid #E6E9ED;
+}
 
 .btn-outline-none:hover {
   background-color: #fcfdfd !important;
   border: 1px solid transparent;
-/*  color: #59c05b;*/
+  /*  color: #59c05b;*/
   box-shadow: transparent 0 0;
   padding: calc(.5em - 5px) 1em;
+}
+
+.btn-outline-none:active {
+  border: 1px solid transparent;
+  outline: 0;
+}
+
+.btn-outline-none:focus:not(:active) {
+  border: 1px solid #fcfdfd;
+  background-color: #fcfdfd !important;
+/*  box-shadow: rgba(72, 95, 199, .25) 0 0 0 .125em;*/
 }
 
 /* CSS */
@@ -133,23 +151,23 @@ main{
 }
 
 .btn-green:active {
-  border-color: #218838;
+  background-color: #218838;
   outline: 0;
 }
 
 .btn-green:focus {
-  border-color: #218838;
+  background-color: #218838;
   box-shadow: rgba(0, 0, 0, .1) 0 10px 10px;
   outline: 0;
 }
 
 .btn-green:hover {
-    background-color: #218838;
-    border-color: #218838;
+  background-color: #218838;
+  border: 1px solid #218838;
 }
 
 .btn-green:focus:not(:active) {
-  border-color: #218838;
+  border: 1px solid #218838;
   box-shadow: rgba(72, 95, 199, .25) 0 0 0 .125em;
 }
 
@@ -184,6 +202,9 @@ main{
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
+.text-blue-color-8 {
+  color: #1BB6F9 !important;
+}
 .text-blue-color-2 {
   color: #017e84 !important;
 }
