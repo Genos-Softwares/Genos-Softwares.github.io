@@ -9,10 +9,12 @@
     {{ end }}
     {{ site.Title }}
 </title>
+
 <meta name="description" content="{{ .Site.Params.description }}">
+<meta name="keywords" content="{{ .Site.Params.keywords }}">
 <meta property="og:type" content="website">
-<meta property="og:title" content="{{ .Site.Params.name }}">
-<meta property="og:description" content="{{ .Site.Params.description }}">
+<meta property="og:title" content="{{ .Site.Params.ogTitle }}">
+<meta property="og:description" content="{{ .Site.Params.ogDescription }}">
 <meta property="og:url" content="{{ .Site.BaseURL }}">
 <meta property="og:site_name" content="{{ .Site.Params.name }}">
 <meta property="og:image" content="{{ .Site.Params.logoBannerUrl }}">
@@ -22,9 +24,9 @@
 <meta property="og:locale" content="en_US">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@YourTwitterHandle">
-<meta name="twitter:title" content="{{ .Site.Params.name }}">
-<meta name="twitter:description" content="{{ .Site.Params.description }}">
+<meta name="twitter:site" content="@bhojanApp">
+<meta name="twitter:title" content="{{ .Site.Params.twitterTitle }}">
+<meta name="twitter:description" content="{{ .Site.Params.twitterDescription }}">
 <meta name="twitter:image" content="{{ .Site.Params.logoBannerUrl }}">
 
 <meta name="application-name" content="{{ .Site.Params.name }}">
@@ -39,24 +41,24 @@
 <link rel="apple-touch-icon" href="{{ .Site.Params.logoBannerUrl }}">
 <script type="application/ld+json">
 {
-	"@context": "https://schema.org",
-	"@type": "SoftwareApplication",
-	"name": "{{ .Site.Params.name }}",
-	"description": "BhojanApp is an all-in-one restaurant management POS software",
-	"applicationCategory": "BusinessApplication",
-	"operatingSystem": "All",
-	"url": "{{ .Site.BaseURL }}",
-	"sameAs": [
-		"https://www.instagram.com/tech_entrepreneurship/",
-		"https://x.com/bhojanApp",
-		"https://www.youtube.com/channel/UCFgYNxfPzTJibXOkm5oudUg"
-	],
-	"offers": {
-		"@type": "Offer",
-		"priceCurrency": "USD",
-		"price": "{{ .Site.Params.price }}",
-		"url": "{{ .Site.BaseURL }}"
-	}
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "{{ .Site.Params.name }}",
+  "description": "{{ .Site.Params.scriptDescription }}",
+  "applicationCategory": "Restaurant Software",
+  "operatingSystem": "All",
+  "url": {{ .Site.BaseURL }},
+  "sameAs": [
+  	{{ range .Site.Menus.social_media_handles }} {{ .URL }},
+  	{{ end }}
+  ],
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "{{ .Site.Params.price }}",
+    "url": {{ .Site.BaseURL }}
+  },
+  "keywords": "{{ .Site.Params.keywords }}"
 }
 </script>
 

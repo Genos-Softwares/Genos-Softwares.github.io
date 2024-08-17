@@ -1,6 +1,6 @@
 baseURL = 'https://bhojanapp.com/'
 languageCode = 'en-us'
-title = 'Bhojan App'
+title = 'BhojanApp | Easy Restaurant Software for Billing and Management'
 enableRobotsTXT = true
 summaryLength=10
 enableGitInfo = true
@@ -13,7 +13,13 @@ disableKinds = ['taxonomy', 'term']
   calendlyLink = 'https://calendly.com/bhojanapp-help/30min'
   logoUrl = '/img/logos/bhojanAppCharlogo.png'
   logoBannerUrl = '/img/logos/bhojanAppBanner.png'
-  description = 'BhojanApp is an all-in-one restaurant management POS software. Manage orders, inventory, and customer relations with ease. Get started with BhojanApp today!'
+  description = 'BhojanApp: Simple software for restaurant owners. Manage bills, orders, and stock easily. Fast software and easy to use!'
+  keywords = 'BhojanApp, easy restaurant software, simple billing app, restaurant management, POS software'
+  ogTitle = 'BhojanApp: Simple Restaurant Software'
+  ogDescription = 'BhojanApp makes restaurant management easy. Handle bills, orders, and stock without hassle. Try it now!'
+  twitterTitle = 'BhojanApp: Easy-to-Use Restaurant Software'
+  twitterDescription = 'Make your restaurant work smoother with BhojanApp. Easy billing, ordering, and stock management.'
+  scriptDescription = 'POS software, restaurant software, billing app, billing software, inventory management'
 
 [permalinks]
   blog = "/blog/:year/:month/:title/"
@@ -114,17 +120,17 @@ disableKinds = ['taxonomy', 'term']
     weight = 3
 
 
-  [[menu.footer_connect]]
+  [[menu.social_media_handles]]
     name = "Instagram"
     url = "https://www.instagram.com/tech_entrepreneurship/"
     weight = 1
 
-  [[menu.footer_connect]]
+  [[menu.social_media_handles]]
     name = "Twitter"
     url = "https://x.com/bhojanApp"
     weight = 2
 
-  [[menu.footer_connect]]
+  [[menu.social_media_handles]]
     name = "Youtube"
     url = "https://www.youtube.com/channel/UCFgYNxfPzTJibXOkm5oudUg"
     weight = 3
