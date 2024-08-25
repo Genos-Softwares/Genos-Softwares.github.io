@@ -7,25 +7,25 @@
             <div class="col-6 md:col-3">
                 <div class="font-bold text-400 line-height-3 mb-3">Company</div>
                 {{ range .Site.Menus.footer_nav }}
-                    <a href="{{ .URL }}" class="line-height-3 block  text-gray-500 text-sm mb-2 no-underline">{{ .Name }}</a>
+                    <a href="{{ .URL }}" class="line-height-3 block text-gray-500 hover:text-gray-100 text-sm mb-2 no-underline">{{ .Name }}</a>
                 {{ end }}
             </div>
             <div class="col-6 md:col-3">
                 <div class="font-bold text-400 line-height-3 mb-3">Comunity</div>
                 {{ range .Site.Menus.social_media_handles }}
-                    <a href="{{ .URL }}" class="line-height-3 block  text-gray-500 text-sm mb-2 no-underline">{{ .Name }}</a>
+                    <a href="{{ .URL }}" class="line-height-3 block text-gray-500 hover:text-gray-100 text-sm mb-2 no-underline">{{ .Name }}</a>
                 {{ end }}
             </div>
             <div class="col-6 md:col-3">
                 <div class="font-bold text-400 line-height-3 mb-3">Resources</div>
                 {{ range .Site.Menus.footer_resource }}
-                    <a href="{{ .URL }}" class="line-height-3 block  text-gray-500 text-sm mb-2 no-underline">{{ .Name }}</a>
+                    <a href="{{ .URL }}" class="line-height-3 block text-gray-500 hover:text-gray-100 text-sm mb-2 no-underline">{{ .Name }}</a>
                 {{ end }}
             </div>
             <div class="col-6 md:col-3">
                 <div class="font-bold text-400 line-height-3 mb-3">Legal</div>
                 {{ range .Site.Menus.footer_link }}
-                    <a href="{{ .URL }}" class="line-height-3 block  text-gray-500 text-sm mb-2 no-underline">{{ .Name }}</a>
+                    <a href="{{ .URL }}" class="line-height-3 block text-gray-500 hover:text-gray-100 text-sm mb-2 no-underline">{{ .Name }}</a>
                 {{ end }}
             </div>
         </div>
