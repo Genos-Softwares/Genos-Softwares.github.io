@@ -9,7 +9,7 @@ disableKinds = ['taxonomy', 'term']
 [params]
   name = 'BhojanApp'
   price = '499.00'
-  demoLink = 'https://forms.gle/gw1K5mnj2HZFW6RGA'
+  demoLink = 'https://forms.gle/Xwhe4gKbu7oQFc38A'
   calendlyLink = 'https://calendly.com/bhojanapp-help/30min'
   logoUrl = '/img/logos/bhojanAppCharlogo.png'
   logoBannerUrl = '/img/logos/bhojanAppBanner.png'
