@@ -1,6 +1,6 @@
 baseURL = 'https://bhojanapp.com/'
 languageCode = 'en-us'
-title = 'BhojanApp | Easy Restaurant Software for Billing and Management'
+title = 'BhojanApp | Easy Restaurant Billing Software'
 enableRobotsTXT = true
 summaryLength=10
 enableGitInfo = true
@@ -9,11 +9,13 @@ disableKinds = ['taxonomy', 'term']
 [params]
   name = 'BhojanApp'
   price = '499.00'
-  setupDownloadLink = 'https://bhojanapp.com/bhojan_app.exe'
+  demoLink = 'https://forms.gle/gw1K5mnj2HZFW6RGA'
   calendlyLink = 'https://calendly.com/bhojanapp-help/30min'
   logoUrl = '/img/logos/bhojanAppCharlogo.png'
   logoBannerUrl = '/img/logos/bhojanAppBanner.png'
-  description = 'BhojanApp: Simple restaurant software. Easily manage your billing, create reports, and keep track of your sales all in one place. Whether you run a small eatery or a bustling restaurant, BhojanApp helps you stay organized and efficient.'
+  
+  description = 'BhojanApp: Simple restaurant software. manage your billing, create reports, and keep track of your sales all in one place. Whether you run a small eatery or a bustling restaurant, BhojanApp helps you stay organized and efficient.'
+
   keywords = 'BhojanApp, easy restaurant software, simple billing app, restaurant management, POS software'
   ogTitle = 'BhojanApp: Simple Restaurant Software'
   ogDescription = 'BhojanApp makes restaurant management easy. Handle bills, orders, and stock without hassle. Try it now!'
@@ -82,7 +84,7 @@ disableKinds = ['taxonomy', 'term']
 
   [[menu.footer_resource]]
     name = "Get Started"
-    url = "https://calendly.com/bhojanapp-help/30min"
+    url = "https://forms.gle/gw1K5mnj2HZFW6RGA"
     weight = 2
 
 

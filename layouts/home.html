@@ -1,18 +1,21 @@
 {{ define "content" }}
     <section class="py-6 text-center">
         <div class="funk-font line-height-1">
-            <h1 class="text-6xl md:text-8xl m-0">Quick 3-Click Restaurant <span class="line-break yellow_highlight_bold_05">POS Software</span></h1>
+            <h1 class="text-6xl md:text-8xl m-0">Quick 3-Click Restaurant <span class="line-break yellow_highlight_bold_05">Billing Software</span></h1>
             <h2 class="text-4xl md:text-7xl my-0 my-3 relative">Simple, efficient, yet
                 <span class="blue_highlight_01 relative">affordable!
                     <em class="text-green text-3xl absolute top-100 end-0 rotate-350 hide-on-phone">
-                    <img src="/img/graphics/FyWn9pdip2EO.svg" class="d-block mb-3 line-break" alt="Loading Img">
-                    <span>
-                        <span class="oe_currency_value">{{ .Site.Params.price }}</span>&nbsp;Rs</span> / month <br>for everything
+                        <img src="/img/graphics/FyWn9pdip2EO.svg" class="d-block mb-3 line-break" alt="Loading Img">
+                        <span>
+                            ₹
+                            <span class="oe_currency_value">{{ .Site.Params.price }}</span>
+                        </span> / month 
+                        <br>for everything
                     </em>
                 </span>
             </h2>
             <div class="my-6">
-                <a href="{{ .Site.Params.setupDownloadLink }}" class="btn btn-green m-2 font-bold">Download now<span class="hide-small"> - It's free</span></a>
+                <a href="{{ .Site.Params.demoLink }}" class="btn btn-green m-2 font-bold">Take a free demo</a>
                 <a target="_blank" href="{{ .Site.Params.calendlyLink }}" class="btn text-green btn-light m-2 font-bold"> Schedule a demo </a>
                 <!-- <br>
                 <img src="/img/arrows/D4kndZSppnbg.svg" class="mt-3 mb-2" loading="lazy">
@@ -56,14 +59,19 @@
                     <span class="yellow_highlight_bold_05">
                         Built for
                     </span> 
-                        all
+                        all types of
                     <span class="yellow_highlight_03"> 
                         food business 
                     </span>
                 </h2>
                 <div class="grid justify-content-center">
-                    <div class="col-12 md:col-5 text-center">
-                        <p class="text-2xl font-light"><strong>Experience true speed,</strong> reduced data entry, and a fast UI. All operations are done in less than 90ms - faster than a blink.</p>
+                    <div class="col-12 md:col-8 text-center">
+                        <p class="text-2xl font-light">
+                            Restaurant Management System for all types of restaurant and food outlets
+                            <br>
+                            <strong>Experience true speed,</strong> 
+                            and a fast UI.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -86,7 +94,7 @@
     <section class="surface-100 curve-left-bottom_right">
         <div class="set-width m-auto px-4 md:p-8">
             <h2 class="funk-font line-height-1 text-5xl md:text-7xl m-0">
-                Restaurant POS 
+                Restaurant Billing 
                 <span class="display_circle">software</span>
                 <br>
                 made 
@@ -96,22 +104,22 @@
             <div class="grid mt-6">
                 <div class="col-12 md:col-7">
                     <div class="card overflow-hidden">
-                        <h3 class="text-2xl font-normal m-0">Advanced POS Software</h3>
+                        <h3 class="text-2xl font-normal m-0">Quick Billing system</h3>
                         <p class="mb-4 text-xl font-light">
-                            - Easy-to-use restaurant POS system
-                            <br> - Faster order taking
-                            <br> - Manage tables and split bills easily
+                            - Generate bills in seconds
+                            <br> - Bill printing and KOT
+                            <br> - Accept all types of payments easily
                         </p>
                         <center>
                             <img src="/img/components/9.png" class="customer-img" alt="BhojanApp POS Software" loading="lazy">
                         </center>
                     </div>
                     <div class="card overflow-hidden">
-                        <h3 class="text-2xl font-normal m-0">Quick Billing App</h3>
+                        <h3 class="text-2xl font-normal m-0">Advance POS software</h3>
                         <p class="mb-4 text-xl font-light">
-                            - Generate bills in seconds
-                            <br> - Simple billing software for restaurants
-                            <br> - Accept all types of payments easily
+                            - Easy-to-use restaurant POS system
+                            <br> - Faster order taking
+                            <br> - Manage tables and split bills easily
                         </p>
                         <center>
                             <img src="/img/components/21.png" class="customer-img" alt="BhojanApp Billing Software" loading="lazy">
@@ -124,7 +132,7 @@
                 </div>
                 <div class="col-12 md:col-5">
                     <div class="card overflow-hidden">
-                        <h3 class="text-2xl font-normal m-0">Smart Inventory Management</h3>
+                        <h3 class="text-2xl font-normal m-0">Inventory Management</h3>
                         <p class="mb-4 text-xl font-light">
                             - Track your stock in real-time
                             <br> - Auto-update inventory with each sale
@@ -147,7 +155,7 @@
                     </div>
                     <div class="card">
                         <h3 class="text-2xl font-normal m-0">Simple Pricing</h3>
-                        <p class="mb-4 text-xl font-light">One fair price for everything. No hidden costs. No long contracts. Just great restaurant software at a great price.</p>
+                        <p class="mb-4 text-xl font-light">Fair price for everything. No hidden costs. No long contracts. Just great restaurant software at a great price.</p>
                         <a href="{{ .Site.Params.calendlyLink }}" class="btn btn-green">Get a Free Demo</a>
                     </div>
                 </div>
@@ -213,11 +221,11 @@
                 </span>
             </h3>
 
-            <a class="btn btn-green" href="{{ .Site.Params.setupDownloadLink }}">Download now - It's free</a>
+            <a class="btn btn-green" href="{{ .Site.Params.demoLink }}">Take a free demo</a>
             <br>
             <img src="/img/arrows/D4kndZSppnbg.svg" class="mt-3 mb-2" alt="Loading Img" loading="lazy">
             <br>
-            <small class="line-height-2 text-800">No credit card required <br> Instant access</small>
+            <small class="line-height-2 text-800">No credit card required</small>
         </div>
     </section>
 {{ end }}
